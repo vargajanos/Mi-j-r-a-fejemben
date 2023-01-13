@@ -6,12 +6,15 @@ img{
 header{
     display: flex;
     align-items: center;
+    background-color: #57f6ff;
     justify-content: center;
     font-size: xx-large;
 }
 
 .harc{
     display: flex;
+    background: rgb(7,36,0);
+background: linear-gradient(0deg, rgba(7,36,0,1) 0%, rgba(2,242,50,1) 0%, rgba(87,246,255,1) 67%);
     justify-content: space-around;
     align-items: center;
     align-self: center;
@@ -22,10 +25,12 @@ footer{
     align-items: flex-end;
     justify-content: center;
 }
+p{
+    text-align: justify;
+}
 
 .golyo{
-    display: flex;
-    width: 10vw;
+    width: 10%;
     position: relative;
     animation-name: dead;
     animation-duration: 3s;
@@ -36,14 +41,18 @@ footer{
     position: relative;
     animation-name: nyertel;
     animation-duration: 4s;
-    animation-duration: 4s;
+    animation-duration: 3s;
     visibility: visible;
+}
+article{
+    display: flex;
+    flex-direction: column;
 }
 @keyframes nyertel{
     0% {bottom: 60px; right: 60px; visibility: hidden;}
-    100%{bottom: 60px; right: 60px; visibility: hidden;}
+    100% {bottom: 60px; right: 60px; visibility: hidden;}
 }
 @keyframes dead{
-    0% {top: 0px; right: 10%;}
-    100% {top: 0px; left: 50%;}
+    0%{right:  10%; top: 0px;}
+    100%{right: -50%; top: 0px; }
 }
